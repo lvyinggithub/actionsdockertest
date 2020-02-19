@@ -1,6 +1,5 @@
 /*
 @File: main.go
-@fork:lucien@lucien.ink
 @Thinks
 */
 package main
