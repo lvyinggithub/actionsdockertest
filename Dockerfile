@@ -3,7 +3,7 @@ RUN yum -y update
 RUN yum -y update
 RUN yum install -y expect redis-server ansible java-1.7.0-openjdk wget unzip openssh-clients gcc-c++ make ruby ruby-rdoc ruby-devel jq
 RUN yum install -y gcc-c++ make
-RUN yum install -y go
+RUN yum install -y golang
 
 ADD . ./
 # Create root2 account
