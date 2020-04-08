@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/hello-world-docker-action@master
     - name: Build the Docker image
-      run: ll 
+      run: echo Hello, rain!
