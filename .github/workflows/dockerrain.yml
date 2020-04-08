@@ -13,6 +13,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout
+      uses: actions/checkout@master
+    - name: Checkout docker
     - uses: actions/hello-world-docker-action@master
-    - name: Build the Docker image
+    - name: echo
       run: echo Hello, rain!
