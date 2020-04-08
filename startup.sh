@@ -5,9 +5,3 @@
 ls -l
 go version
 go run main.go
-
-
-
-
-
-
