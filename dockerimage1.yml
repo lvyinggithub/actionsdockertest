@@ -1,0 +1,31 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+    - name: Docker Action
+      uses: zenato/docker-action@v1.0.0
+      with:
+        # Registry username
+        username: "1"
+        # Registry password
+        password: "1"
+        # Repository on registry
+        repository: "1"
+        # Registry hostname
+        registry: "1"
+        # Image tag
+        tag: "1"
