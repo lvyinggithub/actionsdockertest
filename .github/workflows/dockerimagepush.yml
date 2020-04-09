@@ -9,12 +9,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
 
-      - name: Publish to Registry
-        uses: sergeysova/docker-publish-action@master
-        with:
-          image: rdit01/testrain
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
+
 
       - name: Publish to Registry2
         uses: docker/build-push-action@v1
