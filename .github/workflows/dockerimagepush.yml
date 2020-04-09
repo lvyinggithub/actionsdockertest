@@ -7,10 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
 
       - name: Publish to Registry
-      - uses: sergeysova/docker-publish-action@master
+        uses: sergeysova/docker-publish-action@master
         with:
           image: rdit01/testrain
           username: ${{ secrets.DOCKER_USERNAME }}
