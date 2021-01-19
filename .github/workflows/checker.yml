@@ -1,6 +1,5 @@
 on:
-  push:
-    
+
   
   issues:
     types: [opened, reopened]
